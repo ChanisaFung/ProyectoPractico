@@ -11,3 +11,39 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 <!-- Default theme -->
  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+    <title>Inventario</title>
+    <style>
+      body{
+        background-color: rgb(243, 243, 234);
+      }
+      table thead{
+        background-color: rgb(248, 207, 214);
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+      <a href="index.html">
+   <button id="btnRegresar" type="button" class="btn btn-primary">Regresar</button>  
+   </a>
+   <button id="btnCrear" type="button" class="btn btn-primary" data-toggle="modal">Crear</button>
+    <table id="tablaProductos" class="table mt-2 table-bordered table-striped">
+        <thead>
+            <tr class=" text-center">
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+</div>
+
