@@ -1,4 +1,4 @@
- const registroform = document.querySelector('#registroform')
+const registroform = document.querySelector('#registroform')
 registroform.addEventListener('submit', (e)=>{
     e.preventDefault()
     const usuario = document.querySelector('#usuario').value
