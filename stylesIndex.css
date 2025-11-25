@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    padding: 130px 0 0 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color:lightpink;
+    text-transform: uppercase ;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #111419;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color:lightpink;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+   position: relative; 
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: lavender;
+    padding: 20%;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #FFFFFF;
+}
+
+.borrar{
+    background-color:lightpink ;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color:#FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+span{
+    color: lightpink ;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.header-txt h1{
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color:#111419;
+    margin-bottom: 35px;
+}
+
+.header-txt p{
+    font-size: 17px;
+    color: palevioletred;
+    margin-bottom: 35px;
+}
+
+.butons{
+    display: flex;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: pink;
+    margin-right: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+.header-img img{
+    height: 550px;
+}
+
+.ofertas{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Oferta1-b1{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 219, 151);
+    
+}
+.Oferta1-b2{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(170, 236, 225);
+}
+.Oferta1-b3{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 166, 166);
+}
+
+.Oferta-txt{
+    flex-basis: 50%;
+}
+.Oferta-txt h3{
+    color:#6f00ff;
+    font-size: 20px;
+}
+.Oferta-txt a{
+    color:#c0c0f8;
+}
+.ofertas-img{
+    flex-basis: 50%;
+}
+
+.Productos{
+    padding: 0 30px 30px 30px;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    color: #111419;
+}
+
+.box-container{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    gap: 20px;
+}
+
+.box{
+    border-top: 2px solid lightpink;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #F6FAFB;
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7),
+.box:nth-child(8) {
+    display: inline-block;
+}
+
+.box img {
+    height: 200px;
+}
+
+.productotxt h3{
+    font-size: 20px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.productotxt p{
+    margin-bottom: 25px;
+    color: rgb(197, 136, 174);
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 700;
+    color: darksalmon !important;
+}
+
+.btn-2, .btn-3 {
+    background-color: lightpink;
+    margin-top: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    color:#FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-2:hover, .btn-3:hover, .btn-1:hover {
+    background-color: #F6FAFB;
+}
+
+.btn-3{
+    margin:0;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.Reseñas{
+    padding: 30px;
+    text-align: center;
+}
+
+.Reseñas-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.Reseña1{
+    flex-basis: calc(50% - 20px);
+    padding: 25px;
+    text-align: left;
+    background-color: #F6FAFB;
+    border-top: 5px solid lightpink;
+    margin-bottom: 25px;
+}
+
+.Reseña1 img{
+    width: 100px;
+}
+
+.Reseña1 h4{
+    font-size: 17px;
+    color: #111419;
+}
+
+.Reseña2{
+    flex-basis: calc(50% - 20px);
+    padding: 25px;
+    text-align: left;
+    background-color: #F6FAFB;
+    border-top: 5px solid lightpink;
+    margin-bottom: 25px;
+}
+
+.Reseña2 img{
+    width: 100px;
+}
+
+.Reseña2 h4{
+    font-size: 17px;
+    color: #111419;
+}
+.Reseña3{
+    flex-basis: calc(50% - 20px);
+    padding: 25px;
+    text-align: left;
+    background-color: #F6FAFB;
+    border-top: 5px solid lightpink;
+    margin-bottom: 25px;
+}
+
+.Reseña3 img{
+    width: 100px;
+}
+
+.Reseña3 h4{
+    font-size: 17px;
+    color: #111419;
+}
