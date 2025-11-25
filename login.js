@@ -1,11 +1,14 @@
- function iniciarsesion(){
-    let user=document.getElementById("usuario").value;
-    let pass=document.getElementById("clave").value;
+const loginform = document.querySelector('#loginform')
+loginform.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    const usuario = document.querySelector('#usuario').value
+    const clave = document.querySelector('#clave').value
 
-    if(user=="admin" && pass=="1234"){
-        window.location="index.html";
+    const Users = JSON.parse(localStorage.getItem('users')) || []
+    const validUser = Users.find(user=> user.usuario === usuario && user.clave === clave)
+    if (!validUser){
+        return alert('Usuario y/o contraseña incorrectos')
     }
-    else {
-        alert("Datos incorrectos");
-    }
-}
+    alert(`Bienvenido ${validUser.usuario}`)
+    window.location.href = 'index.html'
+})
