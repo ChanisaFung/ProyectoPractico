@@ -33,3 +33,23 @@ input{
     margin: 10px auto;
 }
 
+label{
+    color:rgb(130, 118, 211);
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+}
+
+input[type="button"] {
+    width: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: block;
+    background-color: rgb(131, 189, 247);
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(155, 155, 253);
+}
